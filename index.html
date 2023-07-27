@@ -15,25 +15,46 @@
 </head>
 <body>
     <header class="container mx-auto">
-        <div class="navbar bg-red-400 py-4 px-9 text-white rounded-full">
-            <div class="navbar-start list-none gap-4 hidden md:inline-flex">
-              <li><a href="">Home</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Shop</a></li>
-              <li><a href="">All Fruits</a></li>
+         
+          <!--navbar /////////////////////// -->
+
+          <div class="navbar bg-red-400 px-8 rounded-full">
+            <div class="navbar-start text-white">
+              <div>
+                <div class="flex gap-5 list-none hidden md:inline-flex">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Shop</li>
+                    <li>All Fruits</li>
+                </div>
+                <div class="dropdown inline-flex md:hidden">
+                  <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                  </label>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Homepage</a></li>
+                    <li><a>Portfolio</a></li> 
+                    <li><a>About</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div class="navbar-center">
-                <img class="" src="images/logo.png" alt="">
-              <a class="btn btn-ghost normal-case text-3xl">Fruit Burst</a>
+              <img src="images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case text-4xl text-white">Fruit Burst</a>
             </div>
-            <div class="navbar-end ">
-                
-               <div class="">
-                <input class="bg-white shadow-sm px-6 py-3 rounded-full" type="search" placeholder="Search Here" name="" id="">
-                <i class="fa-solid fa-magnifying-glass absolute -ms-10 mt-5 text-black"></i>
-               </div>
+            <div class="navbar-end  hidden md:inline-flex">
+             <div class="bg-white shadow-xl px-6 py-2 rounded-full">
+              <input type="search" placeholder="Search here" name="" id="">
+              <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+              </button>
+             
+             </div>
             </div>
           </div>
+
+
 
             <!-- caurasol part  -->
 
